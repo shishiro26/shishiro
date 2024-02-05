@@ -138,7 +138,7 @@ export default function Starfield(props: Props) {
                 right: 0,
                 bottom: 0,
                 left: 0,
-                zIndex: 10,
+                zIndex: -10,
                 opacity: 1,
                 pointerEvents: 'none',
                 mixBlendMode: 'screen',

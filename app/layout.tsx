@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
-import Navbar from "./_components/Navbar";
-import MobileNav from "./_components/MobileNav";
+import Navbar from "@/app/_components/Navbar";
+import MobileNav from "@/app/_components/MobileNav";
+import Footer from "@/app/_components/Footer";
 
 const inter = Nunito({ weight: ["400"], subsets: ["cyrillic-ext"] });
 
@@ -27,7 +28,11 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         <MobileNav />
-        <div>{children}</div>
+        <div>
+          {children}
+        </div>
+        <Footer />
+
       </body>
     </html>
   );

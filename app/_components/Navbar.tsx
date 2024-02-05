@@ -1,50 +1,30 @@
+'use client'
 import React from "react";
-import { Sacramento, Single_Day } from "next/font/google";
+import { Single_Day } from "next/font/google";
 import Link from "next/link";
-const sacramento = Sacramento({ subsets: ["latin"], weight: ["400"] });
-const single = Single_Day({ weight: ["400"] });
+import Shishiro from "./NavLogo";
+const singlefont = Single_Day({ weight: ["400"] });
 
 const Navbar = () => {
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <header className="hidden sm:hidden md:flex md:justify-center md:flex-col md:w-[60%] md:mx-auto md:mt-4">
       <nav className="bg-transparent backdrop-blur-md p-4 2xl:p-5 flex items-center justify-between border-4 border-[#7D80DA] rounded-lg">
-        <h1 className={`${sacramento.className} text-[2rem] text-white`}>
-          {" "}
-          <Link href={`/`}>
-            <span className="hover:text-primary text-5xl 2xl:text-8xl hover:-mt-2 transition-all duration-500 hover:duration-100 text-foreground hover:text-[#7D80DA] ">
-              S
-            </span>
-            <span className="hover:text-primary text-5xl 2xl:text-8xl  hover:-mt-2 transition-all duration-500 hover:duration-100 text-foreground hover:text-[#7D80DA]">
-              h
-            </span>
-            <span className="hover:text-primary text-5xl 2xl:text-8xl  hover:-mt-2 transition-all duration-500 hover:duration-100 text-foreground hover:text-[#7D80DA]">
-              i
-            </span>
-            <span className="hover:text-primary text-5xl 2xl:text-8xl  hover:-mt-2 transition-all duration-500 hover:duration-100 text-foreground text-[#7D80DA] hover:text-white">
-              s
-            </span>
-            <span className="hover:text-primary text-5xl 2xl:text-8xl  hover:-mt-2 transition-all duration-500 hover:duration-100 text-foreground text-[#7D80DA] hover:text-white">
-              h
-            </span>
-            <span className="hover:text-primary text-5xl 2xl:text-8xl  hover:-mt-2 transition-all duration-500 hover:duration-100 text-foreground text-[#7D80DA] hover:text-white">
-              i
-            </span>
-            <span className="hover:text-primary text-5xl 2xl:text-8xl  hover:-mt-2 transition-all duration-500 hover:duration-100 text-foreground hover:text-[#7D80DA]">
-              r
-            </span>
-            <span className="hover:text-primary text-5xl 2xl:text-8xl  hover:-mt-2 transition-all duration-500 hover:duration-100 text-foreground hover:text-[#7D80DA]">
-              o
-            </span>
-          </Link>
-        </h1>
+        <Shishiro />
         <ul
-          className={`${single.className} flex space-x-4 text-white 2xl:space-x-6`}
+          className={`${singlefont.className} flex space-x-4 text-white 2xl:space-x-6`}
         >
           <li
-            className={`cursor-pointer transition-all duration-300  text-3xl 2xl:text-5xl`}
+            className={` cursor-pointer transition-all duration-300  text-3xl 2xl:text-5xl`}
           >
-            {" "}
-            <Link href="#intro" className="hover:scale-110">
+            <Link href="#intro" className="hover:scale-110"
+              onClick={() => scrollToSection("intro")}
+            >
               <span className="hover:text-[#7D80DA] hover:-mt-2 transition-all duration-500 hover:duration-100">
                 I
               </span>
@@ -66,7 +46,8 @@ const Navbar = () => {
             className={`cursor-pointer transition-all duration-300  text-3xl 2xl:text-5xl`}
           >
             {" "}
-            <Link href="#about" className="hover:scale-110">
+            <Link href="#about" className="hover:scale-110"
+              onClick={() => { scrollToSection('about') }} >
               <span className="hover:text-[#7D80DA] hover:-mt-2 transition-all duration-500 hover:duration-100">
                 A
               </span>
@@ -88,7 +69,7 @@ const Navbar = () => {
             className={`cursor-pointer transition-all duration-300  text-3xl 2xl:text-5xl`}
           >
             {" "}
-            <Link href="#projects" className="hover:scale-110">
+            <Link href="#projects" className="hover:scale-110" onClick={() => { scrollToSection('projects') }}>
               <span className="hover:text-[#7D80DA] hover:-mt-2 transition-all duration-500 hover:duration-100">
                 P
               </span>
@@ -118,7 +99,7 @@ const Navbar = () => {
           <li
             className={`cursor-pointer transition-all duration-300  text-3xl 2xl:text-5xl`}
           >
-            <Link href="#contact" className="hover:scale-110">
+            <Link href="#contact" className="hover:scale-110" onClick={() => { scrollToSection('contact') }}>
               <span className="hover:text-[#7D80DA] hover:-mt-2 transition-all duration-500 hover:duration-100">
                 C
               </span>
