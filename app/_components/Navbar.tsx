@@ -41,7 +41,7 @@ const Navbar = () => {
           className={`${single.className} flex space-x-4 text-white 2xl:space-x-6`}
         >
           <li
-            className={`cursor-pointer transition-all duration-300  text-3xl 2xl:text-6xl`}
+            className={`cursor-pointer transition-all duration-300  text-3xl 2xl:text-5xl`}
           >
             {" "}
             <Link href="#intro" className="hover:scale-110">
@@ -63,7 +63,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li
-            className={`cursor-pointer transition-all duration-300  text-3xl 2xl:text-6xl`}
+            className={`cursor-pointer transition-all duration-300  text-3xl 2xl:text-5xl`}
           >
             {" "}
             <Link href="#about" className="hover:scale-110">
@@ -85,7 +85,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li
-            className={`cursor-pointer transition-all duration-300  text-3xl 2xl:text-6xl`}
+            className={`cursor-pointer transition-all duration-300  text-3xl 2xl:text-5xl`}
           >
             {" "}
             <Link href="#projects" className="hover:scale-110">
@@ -116,7 +116,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li
-            className={`cursor-pointer transition-all duration-300  text-3xl 2xl:text-6xl`}
+            className={`cursor-pointer transition-all duration-300  text-3xl 2xl:text-5xl`}
           >
             <Link href="#contact" className="hover:scale-110">
               <span className="hover:text-[#7D80DA] hover:-mt-2 transition-all duration-500 hover:duration-100">

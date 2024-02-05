@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { Single_Day } from "next/font/google";
-import Starfield from "react-starfield";
+import Starfield from "./Starfield";
 const single = Single_Day({ weight: "400" });
 const Intro = () => {
   const downloadResume = () => {
@@ -30,8 +30,8 @@ const Intro = () => {
         speedFactor={0.05}
         backgroundColor="black"
       />
-      <div className="-space-y-4 2xl:-space-y-14 flex flex-col justify-center">
-        <p className="text-[1.4vw]">Hi, I&prime;m</p>
+      <div className="md:-space-y-4 2xl:-space-y-14 flex flex-col justify-center">
+        <p className="text-1rem sm:text-[1rem] md:text-[1.4vw]">Hi, I&prime;m</p>
         <p className="text-[8vw] font-bold">SHISHIRO</p>
         <p className="text-[8vw] text-transparent font-bold bg-clip-text bg-gradient-to-r from-[#7D80DA] to-[#37FF8B]">
           A DEVELOPER
