@@ -10,7 +10,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="mt-10" id='contact'>
+        <section className="mt-10 mx-2" id='contact'>
             <div className="flex justify-center">
                 <h1
                     className={`single_font text-[1.4rem] sm:text-[1.4rem] md:text-[3vw]  px-3 md:py-4 inline rounded-xl text-nowrap`}

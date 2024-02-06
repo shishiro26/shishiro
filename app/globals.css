@@ -21,8 +21,8 @@
   src: url("../public/fonts/Nunito-Medium.ttf");
 }
 
-@font-face{
-  font-family:singlefont;
+@font-face {
+  font-family: singlefont;
   src: url("../public/fonts/SingleDay-Regular.ttf");
 
 }
@@ -41,7 +41,7 @@ body {
   }
 }
 
-.single_font{
+.single_font {
   font-family: singlefont;
 }
 
@@ -101,4 +101,19 @@ body {
 
 .image_frame:hover {
   box-shadow: -105px -105px 0 -100px #37FF8B, 105px 105px 0 -100px #37FF8B;
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
 }

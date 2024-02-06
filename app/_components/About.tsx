@@ -1,7 +1,7 @@
+'use client'
 import React from "react";
 import Image from "next/image";
 import { LearnIcons, icons } from "@/constants";
-
 
 const About = () => {
   return (
@@ -12,7 +12,7 @@ const About = () => {
         >
           01. ABOUT ME
         </h1>
-        <hr className="w-[55%] ml-2 border-2 border-[#7D80DA] h-1 2xl:h-1 2xl:border-4 rounded-lg" />
+        <hr className="hidden sm:hidden md:block md:w-[55%] ml-2 border-2 border-[#7D80DA]  md:h-1 rounded-lg 2xl:border-4" />
       </div>
       <div className="md:flex md:flex-row md:justify-between p-5 md:p-5">
         <div className="sm:mt-1 md:mt-5 text-[1rem] sm:text-lg md:text-[1.4vw] 2xl:text-[1vw] w-full md:w-[60%] mb-4 h-auto">
@@ -29,7 +29,7 @@ const About = () => {
             <p className={`single_font mt-3 text-[1.4rem] cursor-default`}>
               Here are some of the technologies that are part of my current stack:
             </p>
-            <hr className="w-[25%] ml-2 border-2 border-[#7D80DA] h-1 rounded-lg 2xl:border-4" />
+            <hr className="w-[25%] hidden sm:hidden md:block ml-2 border-2 border-[#7D80DA] h-1 rounded-lg 2xl:border-4" />
             <ul className="mt-2 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 space-y-3">
               {
                 icons.map((icon) => {
@@ -48,7 +48,7 @@ const About = () => {
           <div>
             <p className={`single_font mt-3 text-[1.4rem] cursor-default`}>
               Recently, I have been studying some new technologies:            </p>
-            <hr className="w-[25%] ml-2 border-2 border-[#7D80DA] h-1 rounded-lg 2xl:border-4" />
+            <hr className="w-[25%] hidden sm:hidden md:block ml-2 border-2 border-[#7D80DA] h-1 rounded-lg 2xl:border-4" />
             <ul className="mt-2 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 space-y-3">
               {
                 LearnIcons.map((icon) => {

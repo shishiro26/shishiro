@@ -15,16 +15,15 @@ const Projects = () => {
         >
           02. Projects
         </h1>
-        <hr className="w-[55%] ml-2 border-2 border-[#7D80DA] h-1 rounded-lg 2xl:border-4" />
+        <hr className="hidden sm:hidden md:block md:w-[55%] ml-2 border-2 border-[#7D80DA]  md:h-1 rounded-lg 2xl:border-4" />
       </div>
       <div className="flex flex-col items-center justify-between gap-10 lg:gap-36 mt-2 lg:mt-10">
         {
           projects.map((project, index) => {
             const isEvenIndex = index % 2 === 0;
-            const orderClass = isEvenIndex ? "flex-row" : "flex-row-reverse";
-            console.log(orderClass)
+            const order = isEvenIndex ? "order-1" : "order-2";
             return (
-              <div className={`flex flex-col gap-6 h-full lg:${orderClass} 2xl:flex-row`} key={project.name}>
+              <div className={`m-2 sm:m-2 flex flex-col sm:flex-col gap-6 h-full  lg:flex-row 2xl:flex-row ${order}`} key={project.name}>
                 <Link
                   href={project.url}
                   target="_blank"
