@@ -1,5 +1,6 @@
 'use client'
 import React from 'react';
+import { motion } from 'framer-motion'
 
 
 const Contact = () => {
@@ -23,15 +24,17 @@ const Contact = () => {
                     Interested in working together?
                     Feel free to reach out to me!
                 </p>
-                <button
-                    className={`mt-3 2xl:mt-5 px-4 py-3 border-[#37FF8B] border-4 rounded-2xl flex items-center justify-center 2xl:text-[1.3vw] shine single_font md:text-2xl`}
+                <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.85 }}
+                     className={`mt-3 2xl:mt-5 px-4 py-3 border-[#37FF8B] border-4 rounded-2xl flex items-center justify-center 2xl:text-[1.3vw] shine single_font md:text-2xl`}
                     onClick={handleWriteToMe}
                 >
                     Write to me
                     <span className='text-bold'>
                         @
                     </span>
-                </button>
+                </motion.button>
             </div>
         </section>
     );
