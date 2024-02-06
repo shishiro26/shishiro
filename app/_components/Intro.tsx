@@ -1,9 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Single_Day } from "next/font/google";
 import Starfield from "./Starfield";
-const singlefont = Single_Day({ weight: "400" });
 const Intro = () => {
   const downloadResume = () => {
     const resume = "/resume/Shishiro_resume.pdf";
@@ -54,7 +52,7 @@ const Intro = () => {
           height={24}
           className="m-1"
         />
-        <span className={`${singlefont.className} text-lg 2xl:text-2xl`}>
+        <span className={`single_font text-lg 2xl:text-2xl`}>
           Download resume
         </span>
       </button>

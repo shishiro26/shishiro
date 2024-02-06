@@ -5,7 +5,7 @@ import Navbar from "@/app/_components/Navbar";
 import MobileNav from "@/app/_components/MobileNav";
 import Footer from "@/app/_components/Footer";
 
-const inter = Nunito({ weight: ["400"], subsets: ["cyrillic-ext"] });
+const nunito = Nunito({ weight: ["400"], subsets: ["cyrillic-ext"] });
 
 export const metadata: Metadata = {
   title: {
@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <Navbar />
         <MobileNav />
         <div>

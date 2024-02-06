@@ -1,9 +1,7 @@
 'use client'
 import React from "react";
-import { Single_Day } from "next/font/google";
 import Link from "next/link";
 import Shishiro from "./NavLogo";
-const singlefont = Single_Day({ weight: ["400"] });
 
 const Navbar = () => {
   const scrollToSection = (sectionId: string) => {
@@ -17,7 +15,7 @@ const Navbar = () => {
       <nav className="bg-transparent backdrop-blur-md p-4 2xl:p-5 flex items-center justify-between border-4 border-[#7D80DA] rounded-lg">
         <Shishiro />
         <ul
-          className={`${singlefont.className} flex space-x-4 text-white 2xl:space-x-6`}
+          className={`single_font flex space-x-4 text-white 2xl:space-x-6`}
         >
           <li
             className={` cursor-pointer transition-all duration-300  text-3xl 2xl:text-5xl`}

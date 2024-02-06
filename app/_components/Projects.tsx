@@ -1,6 +1,4 @@
 import React from "react";
-import { Single_Day } from "next/font/google";
-const single = Single_Day({ weight: ["400"] });
 import Image from "next/image";
 import Link from "next/link";
 import { projects } from "@/constants";
@@ -13,24 +11,25 @@ const Projects = () => {
     >
       <div className="flex items-center">
         <h1
-          className={`${single.className} text-[1.4rem] sm:text-[1.4rem] md:text-[3vw]  px-3 md:py-4 inline rounded-xl text-nowrap`}
+          className={`single_font text-[1.4rem] sm:text-[1.4rem] md:text-[3vw]  px-3 md:py-4 inline rounded-xl text-nowrap`}
         >
           02. Projects
         </h1>
-        <hr className="w-[55%] ml-2 border-2 border-[#7D80DA] h-1 rounded-lg" />
+        <hr className="w-[55%] ml-2 border-2 border-[#7D80DA] h-1 rounded-lg 2xl:border-4" />
       </div>
       <div className="flex flex-col items-center justify-between gap-10 lg:gap-36 mt-2 lg:mt-10">
         {
           projects.map((project, index) => {
             const isEvenIndex = index % 2 === 0;
             const orderClass = isEvenIndex ? "flex-row" : "flex-row-reverse";
+            console.log(orderClass)
             return (
-              <div className={`flex flex-col gap-6 h-full lg:${orderClass}`} key={project.name}>
+              <div className={`flex flex-col gap-6 h-full lg:${orderClass} 2xl:flex-row`} key={project.name}>
                 <Link
                   href={project.url}
                   target="_blank"
                   className="w-full xl:w-1/2 h-auto relative group border-[1px]
-                         border-slate-100"
+                         border-slate-100 2xl:w-[75%]"
                 >
                   <div className="p-1 shadow-lg ">
                     <Image
@@ -52,11 +51,11 @@ const Projects = () => {
                   <p className="text-sm md:text-base p-2 md:p-6 rounded-md ">
                     {project.description}
                   </p>
-                  <ul className={`${single.className} text-xs md:text-sm font-medium tracking-tight flex max-w-[600px] flex-wrap  gap-1 md:gap-2 justify-end  text-gray-400`}>
+                  <ul className={`single_font text-xs md:text-sm font-medium tracking-tight flex max-w-[600px] flex-wrap  gap-1 md:gap-2 justify-end  text-gray-400`}>
                     {
                       project.techStack.map((stack) => {
                         return (
-                          <li key={stack} className="backdrop-blur-sm text-[#7D80DA] border-1 border-[#37FF8B] py-1 px-3 rounded-md self-end">
+                          <li key={stack} className="backdrop-blur-sm text-[#7D80DA] border-1 border-[#37FF8B] py-1 px-3 rounded-md self-end 2xl:text-[1.2rem]">
                             {stack}
                           </li>
                         )

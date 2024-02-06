@@ -1,6 +1,4 @@
 import React from 'react'
-import { Single_Day } from 'next/font/google'
-const singlefont = Single_Day({ weight: ["400"] });
 import Link from 'next/link';
 import { otherprojects } from '@/constants';
 import { link } from 'fs';
@@ -10,7 +8,7 @@ const OtherProjects = () => {
         <section className="mt-10">
             <div className="flex justify-center">
                 <h1
-                    className={`${singlefont.className} text-[1.4rem] sm:text-[1.4rem] md:text-[3vw]  px-3 md:py-4 inline rounded-xl text-nowrap`}
+                    className={`single_font text-[1.4rem] sm:text-[1.4rem] md:text-[3vw]  px-3 md:py-4 inline rounded-xl text-nowrap`}
                 >
                     Other Projects
                 </h1>
@@ -29,7 +27,7 @@ const OtherProjects = () => {
                                         <p className='text-sm mt-3 text-gray-500'>
                                             {project.description}
                                         </p>
-                                        <ul className={`${singlefont.className} text-xs md:text-sm text-gray-500 flex gap-2 flex-wrap mt-3`}>
+                                        <ul className={`single_font text-xs md:text-sm text-gray-500 flex gap-2 flex-wrap mt-3`}>
                                             {
                                                 project.techStack.map((stack) => {
                                                     return (
