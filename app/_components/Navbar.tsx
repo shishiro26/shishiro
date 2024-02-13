@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <header className="hidden sm:hidden md:flex md:justify-center md:flex-col md:w-[60%] md:mx-auto md:mt-4 sticky top-2 z-10">
       <nav className="bg-transparent backdrop-blur-md p-4 2xl:p-5 flex items-center justify-between border-4 border-[#7D80DA] rounded-lg">
-        <h1 className={`${sacramento.className} text-[2rem] text-white`}>
+        <h1 className={`${sacramento.className} text-[1.5rem] text-white`}>
           <Link href={`/`}>
             <Shishiro />
           </Link>
@@ -31,7 +31,7 @@ const Navbar = () => {
               return (
                 <li
                   key={item.id}
-                  className={` cursor-pointer transition-all duration-300  text-3xl 2xl:text-5xl`}
+                  className={` cursor-pointer transition-all duration-300 text-3xl 2xl:text-3xl`}
                 >
                   <Link href={item.id} className="hover:scale-110"
                     onClick={() => scrollToSection(item.id)}
