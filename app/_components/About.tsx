@@ -1,7 +1,7 @@
-'use client'
-import React from "react";
-import Image from "next/image";
-import { LearnIcons, icons } from "@/constants";
+'use client';
+import React from 'react';
+import Image from 'next/image';
+import { LearnIcons, icons } from '@/constants';
 
 const About = () => {
   return (
@@ -27,47 +27,47 @@ const About = () => {
           </p>
           <div>
             <p className={`single_font mt-3 text-[1.4rem] cursor-default`}>
-              Here are some of the technologies that are part of my current stack:
+              Here are some of the technologies that are part of my current
+              stack:
             </p>
             <hr className="w-[25%] hidden sm:hidden md:block ml-2 border-2 border-[#7D80DA] h-1 rounded-lg 2xl:border-4" />
             <ul className="mt-2 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 space-y-3">
-              {
-                icons.map((icon) => {
-                  return (
-                    <li key={icon.name} className="flex items-center cursor-pointer space-x-2">
-                      <span className="w-5 h-5">
-                        {icon.icon}
-                      </span>
-                      <span>{icon.name}</span>
-                    </li>
-                  )
-                })
-              }
+              {icons.map((icon) => {
+                return (
+                  <li
+                    key={icon.name}
+                    className="flex items-center cursor-pointer space-x-2"
+                  >
+                    <span className="w-5 h-5">{icon.icon}</span>
+                    <span>{icon.name}</span>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div>
             <p className={`single_font mt-3 text-[1.4rem] cursor-default`}>
-              Recently, I have been studying some new technologies:            </p>
+              Recently, I have been studying some new technologies:{' '}
+            </p>
             <hr className="w-[25%] hidden sm:hidden md:block ml-2 border-2 border-[#7D80DA] h-1 rounded-lg 2xl:border-4" />
             <ul className="mt-2 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 space-y-3">
-              {
-                LearnIcons.map((icon) => {
-                  return (
-                    <li key={icon.name} className="flex items-center cursor-pointer space-x-2">
-                      <span className="h-5 w-5">
-                        {icon.icon}
-                      </span>
-                      <span>{icon.name}</span>
-                    </li>
-                  )
-                })
-              }
+              {LearnIcons.map((icon) => {
+                return (
+                  <li
+                    key={icon.name}
+                    className="flex items-center cursor-pointer space-x-2"
+                  >
+                    <span className="h-5 w-5">{icon.icon}</span>
+                    <span>{icon.name}</span>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
         <div className="hidden md:block">
           <Image
-            src={"/shishiro_black.jpg"}
+            src={'/shishiro_black.jpg'}
             alt="shishiro"
             width={350}
             height={250}
