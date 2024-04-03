@@ -1,10 +1,10 @@
-"use client";
-import React from "react";
-import Starfield from "./Starfield";
-import { motion } from 'framer-motion'
+'use client';
+import React from 'react';
+import Starfield from './Starfield';
+import { motion } from 'framer-motion';
 const Intro = () => {
-  const letters = Array.from("SHISHIRO");
-  const words = "DEVELOPER".split(" ");
+  const letters = Array.from('SHISHIRO');
+  const words = 'DEVELOPER'.split(' ');
 
   const container = {
     hidden: { opacity: 0 },
@@ -19,40 +19,37 @@ const Intro = () => {
       opacity: 1,
       x: 0,
       transition: {
-        type: "spring",
+        type: 'spring',
         damping: 12,
-        stiffness: 100
+        stiffness: 100,
       },
     },
     hidden: {
       opacity: 0,
       x: 20,
       transition: {
-        type: "spring",
+        type: 'spring',
         damping: 12,
         stiffness: 100,
       },
     },
   };
 
-
-
-
   const downloadResume = () => {
-    const resume = "/resume/Shishiro_resume.pdf";
+    const resume = '/resume/Shishiro_resume.pdf';
     fetch(resume)
       .then((response) => response.blob())
       .then((blob) => {
         const url = window.URL.createObjectURL(new Blob([blob]));
-        const a = document.createElement("a");
+        const a = document.createElement('a');
         a.href = url;
-        a.download = "Shishiro_Resume.pdf";
+        a.download = 'Shishiro_Resume.pdf';
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
         window.URL.revokeObjectURL(url);
       })
-      .catch((error) => console.error("Error downloading the resume", error));
+      .catch((error) => console.error('Error downloading the resume', error));
   };
 
   return (
@@ -64,21 +61,27 @@ const Intro = () => {
         backgroundColor="black"
       />
       <div className="md:-space-y-6">
-        <p className="text-1rem sm:text-[1rem] md:text-[1.4vw]">Hi, I&prime;m</p>
+        <p className="text-1rem sm:text-[1rem] md:text-[1.4vw]">
+          Hi, I&prime;m
+        </p>
         <motion.div
-          style={{ overflow: "hidden", display: "flex", fontSize: "2rem" }}
+          style={{ overflow: 'hidden', display: 'flex', fontSize: '2rem' }}
           variants={container}
           initial="hidden"
           animate="visible"
         >
           {letters.map((letter, index) => (
-            <motion.span variants={child} key={index} className="text-[8vw] font-bold cursor-default">
-              {letter === " " ? "\u00A0" : letter}
+            <motion.span
+              variants={child}
+              key={index}
+              className="text-[8vw] font-bold cursor-default"
+            >
+              {letter === ' ' ? '\u00A0' : letter}
             </motion.span>
           ))}
         </motion.div>
         <motion.div
-          style={{ overflow: "hidden", display: "flex", fontSize: "2rem" }}
+          style={{ overflow: 'hidden', display: 'flex', fontSize: '2rem' }}
           variants={container}
           initial="hidden"
           animate="visible"
