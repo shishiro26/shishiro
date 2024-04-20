@@ -6,9 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint app --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0",
-    "lint:fix": "eslint app --ext ts,tsx,js,jsx --fix",
-    "format": "prettier --write app/**/*.{ts,tsx,js,jsx,json,css,scss,md,html}",
+    "lint": "eslint app constants --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint app constants --ext ts,tsx,js,jsx --fix",
+    "format": "prettier --write app/**/*.{ts,tsx,js,jsx,json,css,scss,md,html} constants/index.ts",
     "prepare": "husky"
   },
   "dependencies": {
@@ -41,6 +41,10 @@
   },
   "lint-staged": {
     "app/**/*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "constants/index.ts": [
       "eslint --fix",
       "prettier --write"
     ]

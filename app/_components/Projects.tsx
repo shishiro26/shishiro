@@ -6,56 +6,37 @@ import { projects } from '@/constants';
 const Projects = () => {
   return (
     <section
-      className="max-w-7xl mx-auto py-10 lg:py-32 flex flex-col gap-8 scroll-mt-24 "
+      className="max-w-7xl mx-auto py-10 lg:py-32 flex flex-col gap-8 scroll-mt-24"
       id="projects"
     >
       <div className="flex items-center">
         <h1
-          className={`single_font text-[1.4rem] sm:text-[1.4rem] md:text-[3vw]  px-3 md:py-4 inline rounded-xl text-nowrap`}
+          className={`single_font text-[1.4rem] sm:text-[1.4rem] md:text-[3vw] px-3 md:py-4 inline rounded-xl text-nowrap`}
         >
           02. Projects
         </h1>
-        <hr className="hidden sm:hidden md:block md:w-[55%] ml-2 border-2 border-[#7D80DA]  md:h-1 rounded-lg 2xl:border-4" />
+        <hr className="hidden sm:hidden md:block md:w-[55%] ml-2 border-2 border-[#7D80DA] md:h-1 rounded-lg 2xl:border-4" />
       </div>
       <div className="flex flex-col items-center justify-between gap-10 lg:gap-36 mt-2 lg:mt-10">
         {projects.map((project, index) => {
-          const isEvenIndex = index % 2 === 0;
-          const order = isEvenIndex ? 'order-1' : 'order-2';
           return (
             <div
-              className={`m-2 sm:m-2 flex flex-col sm:flex-col gap-6 h-full  lg:flex-row 2xl:flex-row ${order}`}
+              className={`m-2 sm:m-2 flex flex-col sm:flex-col gap-6 h-full lg:flex-row 2xl:flex-row`}
               key={project.name}
             >
-              <Link
-                href={project.url}
-                target="_blank"
-                className="w-full xl:w-1/2 h-auto relative group border-[1px]
-                         border-slate-100 2xl:w-[75%]"
+              <div
+                className={`w-full xl:w-1/2 flex flex-col gap-6 lg:justify-between items-end text-right z-10 mr-5 ${index % 2 !== 0 ? 'md:order-1 lg:order-2 2xl:order-2' : ''}`}
               >
-                <div className="p-1 shadow-lg ">
-                  <Image
-                    alt={project.name}
-                    loading="lazy"
-                    width="1000"
-                    height="1000"
-                    decoding="async"
-                    data-nimg="1"
-                    className="object-contain rounded-sm"
-                    src={project.image}
-                  />
-                </div>
-              </Link>
-              <div className="w-full xl:w-1/2 flex flex-col gap-6 lg:justify-between items-end text-right z-10 mr-5">
                 <div>
-                  <h3 className="text-2xl md:text-3xl  font-bold">
+                  <h3 className="text-2xl md:text-3xl font-bold">
                     {project.name}
                   </h3>
                 </div>
-                <p className="text-sm md:text-base p-2 md:p-6 rounded-md ">
+                <p className="text-sm md:text-base p-2 md:p-6 rounded-md">
                   {project.description}
                 </p>
                 <ul
-                  className={`single_font text-xs md:text-sm font-medium tracking-tight flex max-w-[600px] flex-wrap  gap-1 md:gap-2 justify-end  text-gray-400`}
+                  className={`single_font text-xs md:text-sm font-medium tracking-tight flex max-w-[600px] flex-wrap gap-1 md:gap-2 justify-end text-gray-400`}
                 >
                   {project.techStack.map((stack) => {
                     return (
@@ -68,7 +49,7 @@ const Projects = () => {
                     );
                   })}
                 </ul>
-                <div className="flex items-center gap-5 text-base font-medium  text-blue-600 hover:border-b-[1px] hover:border-gray-400 duration-100">
+                <div className="flex items-center gap-5 text-base font-medium text-blue-600 hover:border-b-[1px] hover:border-gray-400 duration-100">
                   <Link
                     href={project.url}
                     className="flex items-center gap-3"
@@ -95,6 +76,24 @@ const Projects = () => {
                   </Link>
                 </div>
               </div>
+              <Link
+                href={project.url}
+                target="_blank"
+                className="w-full xl:w-1/2 h-auto relative group border-[1px] border-slate-100 2xl:w-[75%]"
+              >
+                <div className="p-1 shadow-lg">
+                  <Image
+                    alt={project.name}
+                    loading="lazy"
+                    width="1000"
+                    height="1000"
+                    decoding="async"
+                    data-nimg="1"
+                    className="object-contain rounded-sm"
+                    src={project.image}
+                  />
+                </div>
+              </Link>
             </div>
           );
         })}
