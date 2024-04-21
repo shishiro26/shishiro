@@ -1,19 +1,12 @@
 'use client';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 export default function NotFound() {
-  useEffect(() => {
-    const video = document.getElementById(
-      'not-found-video',
-    ) as HTMLVideoElement;
-    video?.play();
-  }, []);
-
   return (
     <>
       <div className="flex items-center justify-center my-2 p-4">
-        <video id="not-found-video" autoPlay loop>
+        <video autoPlay loop crossOrigin="">
           <source src="/audio/not-found.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
