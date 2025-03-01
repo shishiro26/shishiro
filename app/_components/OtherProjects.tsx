@@ -1,6 +1,7 @@
-import React from 'react';
-import Link from 'next/link';
-import { otherprojects } from '@/constants';
+import React from "react";
+import Link from "next/link";
+import { otherprojects } from "@/constants";
+
 const OtherProjects = () => {
   return (
     <section className="mt-10">
@@ -15,7 +16,7 @@ const OtherProjects = () => {
         {otherprojects.map((project) => {
           return (
             <Link href={project.url} key={project.name}>
-              <div className="w-full h-full lg:h-70 rounded-lg bg-transparent p-4 lg:p-7 flex flex-col justify-center gap-6 hover:-translate-y-2 transition-transform duration-300 group border-4 border-[#37FF8B]">
+              <div className="w-full h-full lg:h-100 rounded-lg bg-transparent p-4 lg:p-7 flex flex-col justify-center gap-6 hover:-translate-y-2 transition-transform duration-300 group border-4 border-[#37FF8B]">
                 <div className="flex justify-between items-center">
                   <svg
                     stroke="currentColor"

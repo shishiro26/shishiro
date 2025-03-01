@@ -1,12 +1,12 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <footer className="p-[15px] flex flex-col items-center text-center mt-24">
       <ul className="flex items-center space-x-3 ">
         <li>
-          <Link href={'https://github.com/shishiro26'} target="_blank">
+          <Link href={"https://github.com/shishiro26"} target="_blank">
             <div className="m-1">
               <svg
                 stroke="white"
@@ -25,7 +25,7 @@ const Footer = () => {
           </Link>
         </li>
         <li>
-          <Link href={'https://www.linkedin.com/in/shishiro/'} target="_blank">
+          <Link href={"https://www.linkedin.com/in/shishiro/"} target="_blank">
             <div>
               <svg
                 stroke="#fff"
@@ -47,7 +47,7 @@ const Footer = () => {
           </Link>
         </li>
         <li>
-          <Link href={'https://twitter.com/ShishiroBannu'} target="_blank">
+          <Link href={"https://twitter.com/ShishiroBannu"} target="_blank">
             <div className="m-1 hover:stroke-1 hover:fill-red-500">
               <svg
                 width="18"

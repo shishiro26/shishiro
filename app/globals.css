@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --foreground-rgb: 255, 255, 255;
@@ -15,17 +13,15 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
 @font-face {
   font-family: nunito;
-  src: url('../public/fonts/Nunito-Medium.ttf');
+  src: url("../public/fonts/Nunito-Medium.ttf");
 }
 
 @font-face {
   font-family: singlefont;
-  src: url('../public/fonts/SingleDay-Regular.ttf');
+  src: url("../public/fonts/SingleDay-Regular.ttf");
 }
-
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -93,9 +89,7 @@ body {
 }
 
 .image_frame {
-  box-shadow:
-    -30px -30px 0 -25px #37ff8b,
-    30px 30px 0 -25px #37ff8b;
+  box-shadow: -30px -30px 0 -25px #37ff8b, 30px 30px 0 -25px #37ff8b;
   transition: box-shadow;
   transition-duration: 0.3s;
   transition-timing-function: ease-in;
@@ -103,9 +97,7 @@ body {
 }
 
 .image_frame:hover {
-  box-shadow:
-    -105px -105px 0 -100px #37ff8b,
-    105px 105px 0 -100px #37ff8b;
+  box-shadow: -105px -105px 0 -100px #37ff8b, 105px 105px 0 -100px #37ff8b;
 }
 
 @keyframes spin {

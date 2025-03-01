@@ -1,9 +1,8 @@
-import React from 'react';
-import Link from 'next/link';
-import { Sacramento } from 'next/font/google';
-import { Shishiro } from './NavLogo';
-const sacramento = Sacramento({ subsets: ['latin'], weight: ['400'] });
-import PlayAudio from './Audio';
+import React from "react";
+import Link from "next/link";
+import { Sacramento } from "next/font/google";
+import { Shishiro } from "./NavLogo";
+const sacramento = Sacramento({ subsets: ["latin"], weight: ["400"] });
 
 const MobileNav = () => {
   return (
@@ -14,7 +13,6 @@ const MobileNav = () => {
             <Shishiro />
           </Link>
         </h1>
-        <PlayAudio />
       </nav>
     </header>
   );

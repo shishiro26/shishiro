@@ -3,24 +3,24 @@ import {
   ContactName,
   IntroName,
   ProjectsName,
-} from '@/app/_components/NavLogo';
+} from "@/app/_components/NavLogo";
 
 export const NavItems = [
   {
     component: <IntroName />,
-    id: '#intro',
+    id: "#intro",
   },
   {
     component: <AboutName />,
-    id: '#about',
+    id: "#about",
   },
   {
     component: <ProjectsName />,
-    id: '#projects',
+    id: "#projects",
   },
   {
     component: <ContactName />,
-    id: '#contact',
+    id: "#contact",
   },
 ];
 
@@ -38,10 +38,10 @@ export const audioIcon = [
           <path
             fill="#AAB1BA"
             d="M311.47,251.053c0-33.28-26.453-59.733-59.733-59.733s-59.733,26.453-59.733,59.733
-           s26.453,59.733,59.733,59.733S311.47,284.333,311.47,251.053L311.47,251.053z M435.204,85.506c39.253,43.52,64,102.4,64,165.547
-           c0,136.533-110.933,247.467-247.467,247.467S4.27,387.586,4.27,251.053S115.204,3.586,251.737,3.586
-           C324.27,3.586,389.977,35.16,435.204,85.506L435.204,85.506z M412.164,147.8l-16.213-5.973l-17.067,47.787l32.427,11.947
-           l17.92-47.787L412.164,147.8z"
+             s26.453,59.733,59.733,59.733S311.47,284.333,311.47,251.053L311.47,251.053z M435.204,85.506c39.253,43.52,64,102.4,64,165.547
+             c0,136.533-110.933,247.467-247.467,247.467S4.27,387.586,4.27,251.053S115.204,3.586,251.737,3.586
+             C324.27,3.586,389.977,35.16,435.204,85.506L435.204,85.506z M412.164,147.8l-16.213-5.973l-17.067,47.787l32.427,11.947
+             l17.92-47.787L412.164,147.8z"
           />
           <polygon
             fill="#FF7474"
@@ -50,34 +50,34 @@ export const audioIcon = [
           <path
             fill="#ECF4F7"
             d="M251.737,242.52c5.12,0,8.533,4.267,8.533,8.533c0,4.267-3.413,8.533-8.533,8.533
-           c-5.12,0-8.533-4.267-8.533-8.533C243.204,246.786,246.617,242.52,251.737,242.52"
+             c-5.12,0-8.533-4.267-8.533-8.533C243.204,246.786,246.617,242.52,251.737,242.52"
           />
         </g>
         <path
           fill="#51565F"
           d="M252.737,503.786c-139.093,0-251.733-112.64-251.733-251.733S113.644,0.32,252.737,0.32
-       c69.12,0,134.827,28.16,181.76,77.653L461.804,2.88c0.853-2.56,3.413-3.413,5.12-2.56c2.56,0.853,3.413,3.413,2.56,5.12
-       l-51.2,139.947l11.947,4.267c0.853,0,1.707,0.853,2.56,2.56s0.853,2.56,0,3.413l-17.92,47.787c-0.853,2.56-3.413,3.413-5.12,2.56
-       l-32.427-11.947c-0.853,0-1.707-0.853-2.56-2.56s-0.853-2.56,0-3.413l17.92-47.787c0.853-2.56,3.413-3.413,5.12-2.56l11.947,4.267
-       l20.48-56.32C384.15,36.16,319.297,7.147,251.03,7.147c-133.973,0-243.2,109.227-243.2,243.2s109.227,243.2,243.2,243.2
-       s243.2-109.227,243.2-243.2c0-47.787-13.653-93.867-40.107-133.973c-1.707-1.707-0.853-4.267,0.853-5.973
-       c1.707-1.707,4.267-0.853,5.973,0.853c27.307,40.96,41.813,88.747,41.813,138.24C504.47,391.146,391.83,503.786,252.737,503.786z
-        M385.857,188.906l23.893,8.533l14.507-40.107l-11.947-4.267l0,0l0,0l-11.947-4.267L385.857,188.906z M343.19,410.773
-       c-1.707,0-2.56-0.853-3.413-1.707c-0.853-1.707-0.853-4.267,1.707-5.973c25.6-15.36,46.933-36.693,62.293-62.293
-       c0.853-1.707,3.413-2.56,5.973-1.707c1.707,0.853,2.56,3.413,1.707,5.973c-16.213,27.307-38.4,49.493-65.707,65.707
-       C344.897,410.773,344.044,410.773,343.19,410.773z M326.124,381.76c-1.707,0-2.56-0.853-3.413-1.707
-       c-0.853-1.707-0.853-4.267,1.707-5.973c20.48-11.947,38.4-29.867,50.347-50.347c0.853-1.707,3.413-2.56,5.973-1.707
-       c1.707,0.853,2.56,3.413,1.707,5.973c-12.8,22.187-31.573,40.107-52.907,52.907C327.83,380.906,326.977,381.76,326.124,381.76z
-        M252.737,316.053c-34.987,0-64-29.013-64-64s29.013-64,64-64s64,29.013,64,64S287.724,316.053,252.737,316.053z M252.737,196.586
-       c-30.72,0-55.467,24.747-55.467,55.467s24.747,55.467,55.467,55.467s55.467-24.747,55.467-55.467S283.457,196.586,252.737,196.586z
-        M252.737,264.853c-6.827,0-12.8-5.973-12.8-12.8c0-6.827,5.973-12.8,12.8-12.8c6.827,0,12.8,5.973,12.8,12.8
-       C265.537,258.88,259.564,264.853,252.737,264.853z M252.737,247.786c-2.56,0-4.267,1.707-4.267,4.267
-       c0,2.56,1.707,4.267,4.267,4.267s4.267-1.707,4.267-4.267C257.004,249.493,255.297,247.786,252.737,247.786z M127.297,182.933
-       c-0.853,0-1.707,0-2.56-0.853c-1.707-0.853-2.56-3.413-1.707-5.973c12.8-22.187,31.573-40.107,52.907-52.907
-       c1.707-0.853,4.267-0.853,5.973,1.707c0.853,1.707,0.853,4.267-1.707,5.973c-20.48,11.947-38.4,29.867-50.347,50.347
-       C130.71,182.08,129.004,182.933,127.297,182.933z M98.284,165.866c-0.853,0-1.707,0-2.56-0.853c-1.707-0.853-2.56-3.413-1.707-5.973
-       c16.213-27.307,38.4-49.493,65.707-65.707c1.707-0.853,4.267-0.853,5.973,1.707c0.853,1.707,0.853,4.267-1.707,5.973
-       c-25.6,15.36-46.933,36.693-62.293,62.293C100.844,165.013,99.99,165.866,98.284,165.866z"
+         c69.12,0,134.827,28.16,181.76,77.653L461.804,2.88c0.853-2.56,3.413-3.413,5.12-2.56c2.56,0.853,3.413,3.413,2.56,5.12
+         l-51.2,139.947l11.947,4.267c0.853,0,1.707,0.853,2.56,2.56s0.853,2.56,0,3.413l-17.92,47.787c-0.853,2.56-3.413,3.413-5.12,2.56
+         l-32.427-11.947c-0.853,0-1.707-0.853-2.56-2.56s-0.853-2.56,0-3.413l17.92-47.787c0.853-2.56,3.413-3.413,5.12-2.56l11.947,4.267
+         l20.48-56.32C384.15,36.16,319.297,7.147,251.03,7.147c-133.973,0-243.2,109.227-243.2,243.2s109.227,243.2,243.2,243.2
+         s243.2-109.227,243.2-243.2c0-47.787-13.653-93.867-40.107-133.973c-1.707-1.707-0.853-4.267,0.853-5.973
+         c1.707-1.707,4.267-0.853,5.973,0.853c27.307,40.96,41.813,88.747,41.813,138.24C504.47,391.146,391.83,503.786,252.737,503.786z
+          M385.857,188.906l23.893,8.533l14.507-40.107l-11.947-4.267l0,0l0,0l-11.947-4.267L385.857,188.906z M343.19,410.773
+         c-1.707,0-2.56-0.853-3.413-1.707c-0.853-1.707-0.853-4.267,1.707-5.973c25.6-15.36,46.933-36.693,62.293-62.293
+         c0.853-1.707,3.413-2.56,5.973-1.707c1.707,0.853,2.56,3.413,1.707,5.973c-16.213,27.307-38.4,49.493-65.707,65.707
+         C344.897,410.773,344.044,410.773,343.19,410.773z M326.124,381.76c-1.707,0-2.56-0.853-3.413-1.707
+         c-0.853-1.707-0.853-4.267,1.707-5.973c20.48-11.947,38.4-29.867,50.347-50.347c0.853-1.707,3.413-2.56,5.973-1.707
+         c1.707,0.853,2.56,3.413,1.707,5.973c-12.8,22.187-31.573,40.107-52.907,52.907C327.83,380.906,326.977,381.76,326.124,381.76z
+          M252.737,316.053c-34.987,0-64-29.013-64-64s29.013-64,64-64s64,29.013,64,64S287.724,316.053,252.737,316.053z M252.737,196.586
+         c-30.72,0-55.467,24.747-55.467,55.467s24.747,55.467,55.467,55.467s55.467-24.747,55.467-55.467S283.457,196.586,252.737,196.586z
+          M252.737,264.853c-6.827,0-12.8-5.973-12.8-12.8c0-6.827,5.973-12.8,12.8-12.8c6.827,0,12.8,5.973,12.8,12.8
+         C265.537,258.88,259.564,264.853,252.737,264.853z M252.737,247.786c-2.56,0-4.267,1.707-4.267,4.267
+         c0,2.56,1.707,4.267,4.267,4.267s4.267-1.707,4.267-4.267C257.004,249.493,255.297,247.786,252.737,247.786z M127.297,182.933
+         c-0.853,0-1.707,0-2.56-0.853c-1.707-0.853-2.56-3.413-1.707-5.973c12.8-22.187,31.573-40.107,52.907-52.907
+         c1.707-0.853,4.267-0.853,5.973,1.707c0.853,1.707,0.853,4.267-1.707,5.973c-20.48,11.947-38.4,29.867-50.347,50.347
+         C130.71,182.08,129.004,182.933,127.297,182.933z M98.284,165.866c-0.853,0-1.707,0-2.56-0.853c-1.707-0.853-2.56-3.413-1.707-5.973
+         c16.213-27.307,38.4-49.493,65.707-65.707c1.707-0.853,4.267-0.853,5.973,1.707c0.853,1.707,0.853,4.267-1.707,5.973
+         c-25.6,15.36-46.933,36.693-62.293,62.293C100.844,165.013,99.99,165.866,98.284,165.866z"
         />
       </svg>
     ),
@@ -86,7 +86,7 @@ export const audioIcon = [
 
 export const icons = [
   {
-    name: 'Nextjs 14',
+    name: "Nextjs 14",
     icon: (
       <svg
         stroke="currentColor"
@@ -107,7 +107,7 @@ export const icons = [
     ),
   },
   {
-    name: 'React',
+    name: "React",
     icon: (
       <svg viewBox="0 0 128 128" className="h-5 w-5">
         <g fill="#61DAFB">
@@ -118,7 +118,7 @@ export const icons = [
     ),
   },
   {
-    name: 'Typescript',
+    name: "Typescript",
     icon: (
       <svg viewBox="0 0 128 128" className="h-5 w-5">
         <path fill="#fff" d="M22.67 47h99.67v73.67H22.67z"></path>
@@ -131,7 +131,7 @@ export const icons = [
     ),
   },
   {
-    name: 'Tailwind css',
+    name: "Tailwind css",
     icon: (
       <svg
         className="w-5 h-5"
@@ -146,7 +146,7 @@ export const icons = [
     ),
   },
   {
-    name: 'Javascript',
+    name: "Javascript",
     icon: (
       <svg viewBox="0 0 128 128" className="h-5 w-5">
         <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path>
@@ -158,7 +158,7 @@ export const icons = [
     ),
   },
   {
-    name: 'Nodejs',
+    name: "Nodejs",
     icon: (
       <svg viewBox="0 0 128 128" className="h-5 w-5">
         <path
@@ -169,7 +169,7 @@ export const icons = [
     ),
   },
   {
-    name: 'Expressjs',
+    name: "Expressjs",
     icon: (
       <svg viewBox="0 0 128 128" className="h-5 w-5" fill="white">
         <path d="M126.67 98.44c-4.56 1.16-7.38.05-9.91-3.75-5.68-8.51-11.95-16.63-18-24.9-.78-1.07-1.59-2.12-2.6-3.45C89 76 81.85 85.2 75.14 94.77c-2.4 3.42-4.92 4.91-9.4 3.7l26.92-36.13L67.6 29.71c4.31-.84 7.29-.41 9.93 3.45 5.83 8.52 12.26 16.63 18.67 25.21 6.45-8.55 12.8-16.67 18.8-25.11 2.41-3.42 5-4.72 9.33-3.46-3.28 4.35-6.49 8.63-9.72 12.88-4.36 5.73-8.64 11.53-13.16 17.14-1.61 2-1.35 3.3.09 5.19C109.9 76 118.16 87.1 126.67 98.44zM1.33 61.74c.72-3.61 1.2-7.29 2.2-10.83 6-21.43 30.6-30.34 47.5-17.06C60.93 41.64 63.39 52.62 62.9 65H7.1c-.84 22.21 15.15 35.62 35.53 28.78 7.15-2.4 11.36-8 13.47-15 1.07-3.51 2.84-4.06 6.14-3.06-1.69 8.76-5.52 16.08-13.52 20.66-12 6.86-29.13 4.64-38.14-4.89C5.26 85.89 3 78.92 2 71.39c-.15-1.2-.46-2.38-.7-3.57q.03-3.04.03-6.08zm5.87-1.49h50.43c-.33-16.06-10.33-27.47-24-27.57-15-.12-25.78 11.02-26.43 27.57z"></path>
@@ -177,7 +177,7 @@ export const icons = [
     ),
   },
   {
-    name: 'Mongodb',
+    name: "Mongodb",
     icon: (
       <svg viewBox="0 0 128 128" className="h-5">
         <path
@@ -280,7 +280,7 @@ export const icons = [
     ),
   },
   {
-    name: 'Denojs',
+    name: "Denojs",
     icon: (
       <svg viewBox="0 0 128 128" className="h-5 w-5">
         <path
@@ -295,7 +295,7 @@ export const icons = [
     ),
   },
   {
-    name: 'Figma',
+    name: "Figma",
     icon: (
       <svg viewBox="0 0 128 128" className="h-5 w-5">
         <path
@@ -322,7 +322,7 @@ export const icons = [
     ),
   },
   {
-    name: 'Mysql',
+    name: "Mysql",
     icon: (
       <svg viewBox="0 0 128 128" className="h-5 w-5">
         <path
@@ -336,7 +336,7 @@ export const icons = [
 
 export const LearnIcons = [
   {
-    name: 'Linux',
+    name: "Linux",
     icon: (
       <svg fill="#333" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
         <rect fill="#fff" height="512" rx="15%" width="512" />
@@ -356,7 +356,7 @@ export const LearnIcons = [
     ),
   },
   {
-    name: 'Docker',
+    name: "Docker",
     icon: (
       <svg viewBox="0 0 128 128" className="h-5 w-5">
         <path
@@ -450,88 +450,88 @@ export const LearnIcons = [
 
 export const projects = [
   {
-    name: 'Equinox-2k24',
-    url: 'https://equinox.iiitl.ac.in',
-    image: '/images/equinox.webp',
+    name: "Equinox-2k24",
+    url: "https://equinox.iiitl.ac.in",
+    image: "/images/equinox.webp",
     description:
-      'Equinox is the annual techno-cultural fest of IIIT Lucknow. It is a three-day event that is held in the month of March. It is a platform for students to showcase their talents and skills in various fields such as coding, gaming, music, dance, and many more.',
-    techStack: ['Nextjs 14', 'Tailwindcss'],
+      "Equinox is the annual techno-cultural fest of IIIT Lucknow. It is a three-day event that is held in the month of March. It is a platform for students to showcase their talents and skills in various fields such as coding, gaming, music, dance, and many more.",
+    techStack: ["Nextjs 14", "Tailwindcss"],
   },
   {
-    name: 'Portfolio',
-    url: 'https://shishiro.vercel.app',
-    image: '/images/portfolio.webp',
+    name: "Portfolio",
+    url: "https://shishiro.vercel.app",
+    image: "/images/portfolio.webp",
     description:
       "Explore my personal portfolio! , this website serves as a digital canvas where I showcase my skills, projects, and experiences. It's a glimpse into my world—a place to discover more about me and my work.",
-    techStack: ['Nextjs 14', 'Tailwindcss'],
+    techStack: ["Nextjs 14", "Tailwindcss"],
   },
   {
-    name: 'Growonsmedia',
-    url: 'leads.growonsmedia.com',
-    image: '/images/growonsmedia.webp',
+    name: "Growonsmedia",
+    url: "leads.growonsmedia.com",
+    image: "/images/growonsmedia.webp",
     description:
-      'Growonsmedia is my freelance project focused on facilitating money transactions efficiently. Leveraging Prisma and Next.js, the platform ensures secure and seamless financial interactions. Additionally, Cloudinary is integrated for efficient image storage, enhancing user experience and data management.',
-    techStack: ['Next.js 14', 'Prisma', 'MongoDB', 'Cloudinary', 'Shadcnui'],
+      "Growonsmedia is my freelance project focused on facilitating money transactions efficiently. Leveraging Prisma and Next.js, the platform ensures secure and seamless financial interactions. Additionally, Cloudinary is integrated for efficient image storage, enhancing user experience and data management.",
+    techStack: ["Next.js 14", "Prisma", "MongoDB", "Cloudinary", "Shadcnui"],
   },
 ];
 
 export const otherprojects = [
   {
-    name: 'SoulShare',
-    url: 'https://soul-share.vercel.app',
+    name: "SoulShare",
+    url: "https://soul-share.vercel.app",
     description:
-      'SoulShare is a heartwarming web platform designed to bridge the gap between surplus resources and those in need by facilitating the sharing of leftover food and unused clothes. In a world where both food wastage and clothing disposal are pressing concerns.',
+      "SoulShare is a heartwarming web platform designed to bridge the gap between surplus resources and those in need by facilitating the sharing of leftover food and unused clothes. In a world where both food wastage and clothing disposal are pressing concerns.",
     techStack: [
-      'React',
-      'Node.js',
-      'Express',
-      'Tailwindcss',
-      'MongoDB',
-      'Framer-motion',
-      'Github',
-      'Vercel',
+      "React",
+      "Node.js",
+      "Express",
+      "Tailwindcss",
+      "MongoDB",
+      "Framer-motion",
+      "Github",
+      "Vercel",
     ],
   },
   {
-    name: 'Devlink',
-    url: 'https://dev-link-one.vercel.app/',
+    name: "Devlink",
+    url: "https://dev-link-one.vercel.app/",
     description:
-      'Connecting developers worldwide for collaborative coding adventures! Join our vibrant community of developers, collaborate on projects, participate in hackathons, and explore a wealth of resources to level up your coding skills.',
+      "Connecting developers worldwide for collaborative coding adventures! Join our vibrant community of developers, collaborate on projects, participate in hackathons, and explore a wealth of resources to level up your coding skills.",
     techStack: [
-      'Nextjs 14',
-      'Prisma',
-      'Mongodb',
-      'Tailwindcss',
-      'Github',
-      'Vercel',
+      "Nextjs 14",
+      "Prisma",
+      "Mongodb",
+      "Tailwindcss",
+      "Github",
+      "Vercel",
     ],
   },
   {
-    name: 'cli-issue-tracker',
-    url: 'https://www.npmjs.com/package/cli-issue-tracker',
+    name: "cli-issue-tracker",
+    url: "https://www.npmjs.com/package/cli-issue-tracker",
     description:
-      'Efficiently organize and view GitHub repository issues by labels using this CLI tool for streamlined issue tracking and management.',
-    techStack: ['Node.js', 'Github API', 'Npm', 'Github'],
+      "Efficiently organize and view GitHub repository issues by labels using this CLI tool for streamlined issue tracking and management.",
+    techStack: ["Node.js", "Github API", "Npm", "Github"],
   },
   {
-    name: 'Ecommerce',
-    url: 'https://ecommerce-bice-gamma.vercel.app/',
+    name: "Ecommerce",
+    url: "https://ecommerce-bice-gamma.vercel.app/",
     description:
-      'Ecommerce is the ecommerce platform which is used to add projects and add the projects to the cart',
-    techStack: ['Nextjs 14', 'Mongodb', 'Prisma', 'Github'],
+      "Ecommerce is the ecommerce platform which is used to add projects and add the projects to the cart",
+    techStack: ["Nextjs 14", "Mongodb", "Prisma", "Github"],
   },
   {
-    name: 'TypeMaster',
-    url: 'https://github.com/shishiro26/TypeMaster',
+    name: "TypeMaster",
+    url: "https://github.com/shishiro26/TypeMaster",
     description:
-      'Typemaster is the website which is build upon the concept of typing speed test and it is build using the reactjs and css3',
-    techStack: ['Reactjs', 'Mongodb', 'Expressjs', 'Nodejs', 'CSS3', 'Github'],
+      "Typemaster is the website which is build upon the concept of typing speed test and it is build using the reactjs and css3",
+    techStack: ["Reactjs", "Mongodb", "Expressjs", "Nodejs", "CSS3", "Github"],
   },
   {
-    name: 'ExpressiveEchoes',
-    url: 'https://github.com/shishiro26/ExpressiveEchoes',
+    name: "ExpressiveEchoes",
+    url: "https://github.com/shishiro26/ExpressiveEchoes",
     description:
-      'Expressive Echoes: A captivating blog website that resonates with diverse thoughts and ideas. Explore a symphony of articles that range from art and culture to technology and society. Join us in the journey of sharing and discovering insightful perspectives.',
-    techStack: ['Reactjs', 'Mongodb', 'Expressjs', 'Nodejs', 'Tailwindcss'],
+      "Expressive Echoes: A captivating blog website that resonates with diverse thoughts and ideas. Explore a symphony of articles that range from art and culture to technology and society. Join us in the journey of sharing and discovering insightful perspectives.",
+    techStack: ["Reactjs", "Mongodb", "Expressjs", "Nodejs", "Tailwindcss"],
   },
 ];

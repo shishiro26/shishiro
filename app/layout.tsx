@@ -1,21 +1,19 @@
-import type { Metadata } from 'next';
-import './globals.css';
-import Navbar from '@/app/_components/Navbar';
-import MobileNav from '@/app/_components/MobileNav';
-import Footer from '@/app/_components/Footer';
-import React from 'react';
+import type { Metadata } from "next";
+import "./globals.css";
+import Navbar from "./_components/Navbar";
+import MobileNav from "./_components/MobileNav";
+import Footer from "./_components/Footer";
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'SHISHIRO',
+    absolute: "SHISHIRO",
   },
   description:
     "Hey, I'm Shishiro. I'm an student at Indian Institute of Information and Technology,Lucknow and learning web development.",
   icons: {
-    icon: '/favicon.ico',
+    icon: "/favicon.ico",
   },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{

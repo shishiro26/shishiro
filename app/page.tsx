@@ -1,8 +1,8 @@
-import Intro from '@/app/_components/Intro';
-import About from '@/app/_components/About';
-import Projects from '@/app/_components/Projects';
-import Contact from '@/app/_components/Contact';
-import OtherProjects from '@/app/_components/OtherProjects';
+import Intro from "@/app/_components/Intro";
+import About from "@/app/_components/About";
+import Projects from "@/app/_components/Projects";
+import Contact from "@/app/_components/Contact";
+import OtherProjects from "@/app/_components/OtherProjects";
 
 export default function Home() {
   return (

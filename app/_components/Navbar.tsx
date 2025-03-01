@@ -1,17 +1,16 @@
-'use client';
-import React from 'react';
-import Link from 'next/link';
-import { Shishiro } from './NavLogo';
-import { Sacramento } from 'next/font/google';
-import { NavItems } from '@/constants';
-import PlayAudio from './Audio';
-const sacramento = Sacramento({ subsets: ['latin'], weight: ['400'] });
+"use client";
+import React from "react";
+import Link from "next/link";
+import { Shishiro } from "./NavLogo";
+import { Sacramento } from "next/font/google";
+import { NavItems } from "@/constants";
+const sacramento = Sacramento({ subsets: ["latin"], weight: ["400"] });
 
 const Navbar = () => {
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -42,7 +41,6 @@ const Navbar = () => {
               </li>
             );
           })}
-          <PlayAudio />
         </ul>
       </nav>
     </header>

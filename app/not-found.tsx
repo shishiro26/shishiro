@@ -1,13 +1,13 @@
-'use client';
-import React from 'react';
-import { motion } from 'framer-motion';
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
 
 export default function NotFound() {
   return (
     <>
       <div className="flex items-center justify-center my-2 p-4">
         <video autoPlay loop crossOrigin="">
-          <source src="/audio/not-found.mp4" type="video/mp4" />
+          <source src="/assets/not-found.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
