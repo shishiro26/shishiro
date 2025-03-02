@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./_components/Navbar";
 import MobileNav from "./_components/MobileNav";
 import Footer from "./_components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: {
@@ -26,6 +27,7 @@ export default function RootLayout({
         <MobileNav />
         <div>{children}</div>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
